@@ -1,0 +1,274 @@
+
+
+body {
+  background: #fff;
+  color: #343F49;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+path.state {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1.page-title {
+  font-size: 3rem;
+  letter-spacing: -.2px;
+  line-height: 3.375rem;
+  margin: 0;
+}
+
+h2.story-title {
+  font-size: 2.5rem;
+  letter-spacing: -.2px;
+  line-height: 2.5rem;
+  margin-top: 11.25px;
+  margin-bottom: 0;
+  color: #343F49;
+}
+
+.top-title {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 300;
+  margin-bottom: 11.25px;
+}
+
+.bar {
+  height: 12px;
+  width: 100px;
+  background: #5AC9E7;
+}
+
+.wrap {
+  padding: 45px 15px;
+  width: 1170px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.content {
+  padding-top: 45px;
+}
+
+.intro-text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.wrap::after,
+.stats-section::after,
+.chart-block::after,
+.chart-key::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.chart-block {
+  margin-top: 22.5px;
+}
+
+.top-section-text {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  bottom: 80px;
+  width: 100%;
+}
+
+.top-section-text p {
+  margin-bottom: 0;
+}
+
+.story-text,
+.chart-text {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.chart-text {
+  margin-top: 22.5px;
+}
+
+.story-text p:last-child {
+  margin-bottom: 0;
+}
+
+.stat-source {
+  margin-top: 11.25px;
+  font-size: 14px;
+  color: #666;
+}
+
+.stat-source a {
+  color: #666;
+}
+
+.stat-source a:hover {
+  color: #ccc;
+}
+
+.adoption-chart .axis path,
+.adoption-chart .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.adoption-chart .line {
+  fill: none;
+}
+
+.adoption-chart .x.axis path {
+  display: inline;
+}
+
+.adoption-chart .y.axis path {
+  stroke: #fff;
+}
+
+.adoption-chart .y.axis .tick text {
+  transform: translate(-5px, 0px);
+}
+
+.adoption-chart .y.axis .tick:first-child text {
+  transform: translate(-5px, -5px);
+}
+
+.adoption-chart .x.axis .tick text {
+  transform: translate(0px, 5px);
+}
+
+.adoption-chart .x.axis .tick:first-child text {
+  transform: translate(15px, 5px);
+}
+
+.adoption-chart .y.axis .tick line {
+  opacity: 0.1;
+}
+
+.axis-label {
+  font-size: 1.125rem;
+}
+
+.top-section-text .down-arrow {
+  border: solid #fff;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 12px;
+  margin-top: 40px;
+ -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+h2.section-title {
+  font-size: 2.5rem;
+  letter-spacing: -.2px;
+  line-height: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #343F49;
+}
+
+.section-text {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-top: 11.25px;
+}
+
+.chart-key {
+  margin-bottom: 20px;
+}
+
+.key-block {
+  width: 18px;
+  height: 18px;
+  background: #E71B4F;
+  float: left;
+  margin-right: 5px;
+}
+
+.key-text {
+  float: left;
+}
+
+
+@media all and (min-width: 1200px) {
+  .adoption-chart{
+    min-height: 500px;
+  }
+}
+
+@media all and (min-width: 992px) and (max-width: 1199px) {
+  .wrap {
+    width: 970px;
+  }
+
+  .adoption-chart {
+    min-height: 415px;
+  }
+
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .wrap {
+    width: 750px;
+  }
+}
+
+@media all and (max-width: 991px) {
+  .wrap {
+    width: 100%;
+    padding: 45px;
+  }
+
+  h2.story-title {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+
+  .adoption-chart .y.axis .tick text,
+  .adoption-chart .x.axis .tick text {
+    font-size: 1.125rem;
+  }
+
+  .axis-label {
+    font-size: 1.25rem;
+  }
+
+}
+
+@media all and (max-width: 767px) {
+  .adoption-chart .y.axis .tick text,
+  .adoption-chart .x.axis .tick text {
+    font-size: 1.25rem;
+  }
+
+  .axis-label {
+    font-size: 1.35rem;
+  }
+}
+
+@media all and (max-width: 599px) {
+  .wrap {
+    padding: 22.5px;
+  }
+
+  .adoption-chart .y.axis .tick text,
+  .adoption-chart .x.axis .tick text {
+    font-size: 1.5rem;
+  }
+
+  .axis-label {
+    font-size: 1.75rem;
+  }
+}
